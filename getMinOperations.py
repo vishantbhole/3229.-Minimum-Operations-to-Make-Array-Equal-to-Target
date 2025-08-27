@@ -23,3 +23,8 @@ if __name__ == "__main__":
     target = [2, 2, 3]
     result = sol.getMinOperations(source,target)
     print("Output is:", result)
+
+
+# Complexity:
+# Time: O(n)
+# Space: O(n) (can be reduced to O(1) if we compute on the fly).
