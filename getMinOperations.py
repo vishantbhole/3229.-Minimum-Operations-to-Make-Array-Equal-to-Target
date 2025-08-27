@@ -6,6 +6,10 @@ class Solution(object):
          n = len(source)
         diff = [target[i] - source[i] for i in range(n)]
 
+         # impossible case
+        if any(d < 0 for d in diff):
+            return -1
+            
         ops = diff[0]
         for i in range(1, n):
             if diff[i] > diff[i-1]:
