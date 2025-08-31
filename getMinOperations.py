@@ -16,3 +16,15 @@ class Solution(object):
                 ops += diff[i] - diff[i-1]
 
         return ops
+
+if __name__ == "__main__":
+    sol = Solution()
+    source = [1, 2, 2]
+    target = [2, 2, 3]
+    result = sol.getMinOperations(source,target)
+    print("Output is:", result)
+
+
+# Complexity:
+# Time: O(n)
+# Space: O(n) (can be reduced to O(1) if we compute on the fly).
